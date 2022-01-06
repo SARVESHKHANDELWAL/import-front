@@ -13,7 +13,6 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MembershipcomponentComponent } from './membershipcomponent/membershipcomponent.component';
 
 // ------------------------------------------------------MASTER-----------------------------------------------------------//
 import { CompanysetupComponent } from './master/companysetup/companysetup.component';
@@ -23,7 +22,10 @@ import { CurrencysettingsComponent } from './master/currencysettings/currencyset
 import { BusineespartnerComponent } from './master/busineespartner/busineespartner.component';
 import { BankimportComponent } from './imports/bankimport/bankimport.component';
 import { DocumentComponent } from './master/document/document.component';
-import {UsermanagementComponent} from './master/usermanagement/usermanagement.component';
+import { RolemanagementComponent } from './master/rolemanagement/rolemanagement.component';
+import { UsermanagementComponent } from './master/usermanagement/usermanagement.component';
+import { ClientsComponent } from './master/clients/clients.component';
+
 // ------------------------------------------------------IMPORT-----------------------------------------------------------//
 import { PlanningComponent } from './imports/planning/planning.component';
 import { VendorComponent } from './imports/vendor/vendor.component';
@@ -38,10 +40,12 @@ import { ThirdpartyinspectionComponent } from './imports/thirdpartyinspection/th
 // ------------------------------------------------------EXPORT-----------------------------------------------------------//
 
 
+
+// -----------------------------------------------------------------------------------------------------------------//
 import { VesseltrackingComponent } from './vesseltracking/vesseltracking.component';
-import {RolemanagementComponent } from './rolemanagement/rolemanagement.component';
-import {ClientsComponent} from './clients/clients.component';
 import { CertificateComponent } from './certificate/certificate.component';
+import { MembershipcomponentComponent } from './membershipcomponent/membershipcomponent.component';
+
 // import { AddformComponent } from './addform/addform.component';
 // import { TableComponent } from './table/table.component';
 
@@ -58,8 +62,7 @@ const routes: Routes = [
   { path: 'otp', component: VerifyotpComponent },
   { path: 'verifyMobile', component: VerifyMobileComponent},
   { path: 'verifyEmail', component: VerifyEmailComponent},  
-  { path: 'membership', component: MembershipcomponentComponent},
-  { path:'certificate', component: CertificateComponent},
+
   // ------------------------------------------------------MASTER ROUTERS-----------------------------------------------------------//
   {path: 'master-companysetup', component: CompanysetupComponent},
   {path: 'master-license',component: LicenseComponent},
@@ -84,8 +87,11 @@ const routes: Routes = [
   // ------------------------------------------------------EXPORT ROUTERS-----------------------------------------------------------//
 
 
+  
   // -----------------------------------------------------------------------------------------------------------------------------//
   {path: 'vesseltracking', component: VesseltrackingComponent},
+  { path:'certificate', component: CertificateComponent},
+  { path: 'membership', component: MembershipcomponentComponent},
  
   // {path: 'addform', component: AddformComponent},
   // {path: 'table', component: TableComponent}    

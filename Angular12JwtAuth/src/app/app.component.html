@@ -2,8 +2,8 @@
     <div *ngIf="isLoggedIn">
       <app-navbar></app-navbar>
     </div>
-
-    <router-outlet class=""></router-outlet>
+    <router-outlet></router-outlet>
+</div>
     
     <!-- <div class="btn-group">
       <a class=" dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
@@ -68,20 +68,19 @@
 
       <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
         <li class="nav-item">
-          <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+          <a routerLink="/register" class="nav-link" routerLink="register">Sign Up</a>
         </li>
         <li class="nav-item">
-          <a href="/login" class="nav-link" routerLink="login">Login</a>
+          <a routerLink="/login" class="nav-link" routerLink="login">Login</a>
         </li>
       </ul>
 
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
         <li class="nav-item">
-          <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+          <a routerLink="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
         </li>
         <li class="nav-item">
-          <a href class="nav-link" (click)="logout()">LogOut</a>
+          <a routerLink class="nav-link" (click)="logout()">LogOut</a>
         </li>
       </ul>
     </nav>  -->
-</div>

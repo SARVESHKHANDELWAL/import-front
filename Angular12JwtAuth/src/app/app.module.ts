@@ -28,7 +28,6 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MembershipcomponentComponent } from './membershipcomponent/membershipcomponent.component';
 
 // ------------------------------------------------------MASTER-----------------------------------------------------------//
 import { CompanysetupComponent } from './master/companysetup/companysetup.component';
@@ -38,6 +37,9 @@ import { CurrencysettingsComponent } from './master/currencysettings/currencyset
 import { BusineespartnerComponent } from './master/busineespartner/busineespartner.component';
 import { BankimportComponent } from './imports/bankimport/bankimport.component';
 import { DocumentComponent } from './master/document/document.component';
+import { RolemanagementComponent } from './master/rolemanagement/rolemanagement.component';
+import { UsermanagementComponent } from './master/usermanagement/usermanagement.component';
+import { ClientsComponent } from './master/clients/clients.component';
 
 // ------------------------------------------------------IMPORT-----------------------------------------------------------//
 import { PlanningComponent } from './imports/planning/planning.component';
@@ -53,13 +55,10 @@ import { ThirdpartyinspectionComponent } from './imports/thirdpartyinspection/th
 // ------------------------------------------------------EXPORT-----------------------------------------------------------//
 
 
-
+// -----------------------------------------------------------------------------------------------------------------//
 import { VesseltrackingComponent } from './vesseltracking/vesseltracking.component';
-import { RolemanagementComponent } from './rolemanagement/rolemanagement.component';
-import { ClientsComponent } from './clients/clients.component';
 import { CertificateComponent } from './certificate/certificate.component';
-import { UsermanagementComponent } from './master/usermanagement/usermanagement.component';
-
+import { MembershipcomponentComponent } from './membershipcomponent/membershipcomponent.component';
 // import { TableComponent } from './table/table.component';
 // import { AddformComponent } from './addform/addform.component';
 
@@ -78,10 +77,10 @@ import { UsermanagementComponent } from './master/usermanagement/usermanagement.
     VerifyEmailComponent,      // verifying email address of user 
     VerifyMobileComponent,     // Mobile OTP Verifation Component
     BoardAdminComponent,      //Board Admin Component
-    BoardModeratorComponent,  // 
+    BoardModeratorComponent,  
     BoardUserComponent,       
     ProfileComponent,         //User Profile Component
-    MembershipcomponentComponent, // To show membership plan to user.
+    
 // ------------------------------------------------------MASTER-----------------------------------------------------------//
     CompanysetupComponent,
     LicenseComponent,    
@@ -90,6 +89,10 @@ import { UsermanagementComponent } from './master/usermanagement/usermanagement.
     BusineespartnerComponent,
     BankimportComponent,
     DocumentComponent, 
+    RolemanagementComponent,
+    UsermanagementComponent,
+    ClientsComponent,
+
 // ------------------------------------------------------IMPORT-----------------------------------------------------------//
     PlanningComponent,         //Planning Component for process              
     VendorComponent,
@@ -101,12 +104,14 @@ import { UsermanagementComponent } from './master/usermanagement/usermanagement.
     BankComponent,
     ThirdpartyinspectionComponent,
     
+// ------------------------------------------------------EXPORT-----------------------------------------------------------//
 
-    VesseltrackingComponent,
-    RolemanagementComponent,
-    ClientsComponent,
+
+
+// -----------------------------------------------------------------------------------------------------------------//
+    VesseltrackingComponent, 
     CertificateComponent,
-    UsermanagementComponent
+    MembershipcomponentComponent, // To show membership plan to user.    
     // AddformComponent,          //Form for Import
     // TableComponent,            // To show dashboard table 
   ],
