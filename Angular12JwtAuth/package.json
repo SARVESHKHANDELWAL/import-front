@@ -34,6 +34,7 @@
     "ng-otp-input": "^1.8.1",
     "ng-select2": "^1.3.1",
     "ng2-tel-input": "^2.3.0",
+    "ngx-editor": "^12.1.0",
     "rxjs": "~6.6.0",
     "select2": "^4.1.0-rc.0",
     "tslib": "^2.3.0",

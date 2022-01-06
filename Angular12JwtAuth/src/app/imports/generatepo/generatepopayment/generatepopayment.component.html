@@ -92,8 +92,17 @@
                                                     <div class="col-md-12">
                                                         <div class="">
                                                             <fieldset class="form-group ">
-                                                                <label class="form-lbl">Trams</label> 
-                                                                <textarea class="text-editor"></textarea>
+                                                                <label class="form-lbl">Trams</label>
+                                                                <div class="NgxEditor__Wrapper">
+                                                                    <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+                                                                    <ngx-editor
+                                                                    [editor]="editor"
+                                                                    [(ngModel)]="text"
+                                                                    [disabled]="false"
+                                                                    [placeholder]="'Type here...'"
+                                                                    ></ngx-editor>
+                                                                </div>
+                                                                <!-- <textarea class="text-editor"></textarea> -->
                                                             </fieldset>
                                                         </div>
                                                     </div>

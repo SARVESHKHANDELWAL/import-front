@@ -59,6 +59,10 @@ export class PlanningComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    // const customjs = document.createElement('script');
+    // customjs.src = 'assets/js/custom.js'
+    // customjs.type = 'text/javascript';
+    // document.getElementsByTagName('body')[0].appendChild(customjs);
   }
   
   onSubmit(){

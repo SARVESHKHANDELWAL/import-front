@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgOtpInputModule } from  'ng-otp-input';
 import { Ng2TelInputModule } from 'ng2-tel-input';
 import { NgSelect2Module } from 'ng-select2';
+import { NgxEditorModule } from 'ngx-editor';
 import * as moment from 'moment';
 // import { MomentModule } from 'ngx-moment';
 
@@ -126,7 +127,8 @@ import { MembershipcomponentComponent } from './membershipcomponent/membershipco
     ReactiveFormsModule, //Exports the required infrastructure and directives for reactive forms, making them available for import by NgModules that import this module.
     NgOtpInputModule,    //Adds directives and providers for in-app navigation among views defined in an application. Use the Angular Router service to declaratively specify application states and manage state transitions.    
     Ng2TelInputModule,
-    NgSelect2Module
+    NgSelect2Module,
+    NgxEditorModule
     // MomentModule
   ],
   providers: [authInterceptorProviders], //Dependencies whose providers are listed here become available for injection into any component, directive, pipe or service that is a child of this injector. The NgModule used for bootstrapping uses the root injector, and can provide dependencies to any part of the app.
