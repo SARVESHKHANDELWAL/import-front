@@ -3,9 +3,7 @@ import { UserService } from '../_services/user.service';
 import { Chart, registerables } from 'chart.js';
 
 import { User } from '../constants/user';
-import { Transaction} from '../constants/transaction';
-
-import * as $ from "jquery";
+import { Transaction } from '../constants/transaction';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +27,12 @@ export class HomeComponent implements OnInit {
 
  
   ngOnInit(): void {
+
+    // const customjs = document.createElement('script');
+    // customjs.src = 'assets/js/custom.js'
+    // customjs.type = 'text/javascript';
+    // document.getElementsByTagName('body')[0].appendChild(customjs);
+
     this.pieChart = new Chart('pie-canvas', {
       type:'pie',
       data: {

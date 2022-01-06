@@ -64,7 +64,7 @@
                                     <div class="form-grid-list">
                                         <fieldset class="form-group">
                                             <label class="form-lbl">Select Vendor  <span class="text-danger">*</span></label> 
-                                            <select [(ngModel)]="form.vendor" #vendor="ngModel"  name="vendor" class="form-control select-select2" required>
+                                            <select [(ngModel)]="form.vendor" #vendor="ngModel"  name="vendor" class="form-control select2 select2-hidden-accessible" required>
                                                 <option value="">Select Vendor</option>
                                                 <option value="Vendor Name One">Vendor Name One </option>
                                                 <option value="Vendor Name Two">Vendor Name Two</option>
@@ -83,7 +83,7 @@
                                     <div class="form-grid-list">
                                         <div class="form-group">
                                             <label class="form-lbl" for=""> Currency <span class="text-danger">*</span></label>
-                                            <select  [(ngModel)]="form.currency" #currency="ngModel" type="text" name="currency" class="form-control select-select2" required>
+                                            <select  [(ngModel)]="form.currency" #currency="ngModel" type="text" name="currency" class="form-control select2 select2-hidden-accessible" required>
                                                 <option value="">Select Currency</option>
                                                 <option value="INR">INR </option>
                                                 <option value="Dollar">Dollar</option>
@@ -113,7 +113,7 @@
                                     <div class="form-grid-list">
                                         <fieldset class="form-group">
                                             <label class="form-lbl">Receipt Date  <span class="text-danger">*</span></label>
-                                            <select  [(ngModel)]="form.receipttype" #receipttype="ngModel" type="text" name="receipttype" class="form-control" required>
+                                            <select  [(ngModel)]="form.receipttype" #receipttype="ngModel" type="text" name="receipttype" class="form-control form-select" required>
                                                 <option value="" selected="">Select Receipt Date</option>
                                                 <option value="Receipt Date one">Receipt Date one</option>
                                                 <option value="Receipt Date Tw">Receipt Date Two</option>
@@ -176,7 +176,7 @@
                                                             <tr> 
                                                                 <td>
                                                                     <fieldset class=""> 
-                                                                        <select name="" class="form-control">
+                                                                        <select name="" class="form-control form-select">
                                                                             <option value="">select Product</option>
                                                                             <option value="" selected="">Grey Cement</option>
                                                                             <option value="">Monthly</option>
@@ -225,7 +225,7 @@
                                                             <tr> 
                                                                 <td>
                                                                     <fieldset class=""> 
-                                                                        <select name="" class="form-control">
+                                                                        <select name="" class="form-control form-select">
                                                                             <option value="">select Product</option>
                                                                             <option value="" selected="">Grey Cement</option>
                                                                             <option value="">Monthly</option>
@@ -303,8 +303,33 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
+                                                        <div class="invoice-semple">
+                                                            <h6>Select Invoice Template</h6>
+                                                            <ul class="list-inline mt-10 border border-info border-3">
+                                                                <li class="col-1 list-inline-item active">
+                                                                    <a href="assets/images/invoice/1.png" data-bs-lity>
+                                                                        <img src="assets/images/invoice/1.png" class="img-fluid" alt="invoice">
+                                                                    </a>
+                                                                </li> 
+                                                                <li class="col-1 list-inline-item">
+                                                                    <a href="assets/images/invoice/2.png" data-bs-lity>
+                                                                        <img src="assets/images/invoice/2.png" class="img-fluid" alt="invoice">
+                                                                    </a>
+                                                                </li> 
+                                                                <li class="col-1 list-inline-item">
+                                                                    <a href="assets/images/invoice/3.png" data-bs-lity>
+                                                                        <img src="assets/images/invoice/3.png" class="img-fluid" alt="invoice">
+                                                                    </a>
+                                                                </li> 
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
                                                         <div class="text-center mt-3">
-                                                            <button routerLink='/import-generatepo-generatepopayment' type="submit" class="button-style ">Send By Email</button>
+                                                            <button routerLink='/import-generatepo-generatepopayment' type="submit" class="button-style m-1">Generate PO</button>
+                                                            <button routerLink='/import-generatepo-generatepopayment' type="submit" class="button-style m-1">Upload PO</button>                                                            
                                                         </div>
                                                     </div>
                                                 </div>

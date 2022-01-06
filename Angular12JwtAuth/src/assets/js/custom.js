@@ -68,14 +68,19 @@ NOTE: This file contains all scripts for the actual Template.
         $(".mob-header").click(function(){
             $(".header-left").addClass("hover-header-left");
         })
+
     };
 
     /*==========================================
             :: Header Hover
     ==========================================*/
     PUS.hoverheader = function () {
-        $(".header-left").hover(function(){
-            $(this).toggleClass("hover-header-left"); 
+        $(".header-left").mouseenter(function(){
+            $(this).addClass("hover-header-left");
+            // $(this).toggleClass("hover-header-left"); 
+        })
+        $(".header-left").mouseleave(function(){
+            $(this).removeClass("hover-header-left");
         })
     };
 
@@ -165,7 +170,7 @@ NOTE: This file contains all scripts for the actual Template.
 	/*==========================================
     		:: Document Ready
 	==========================================*/
-	$(document).ready(function () {   
+    $(document).ready(function () {
         PUS.gototop(), // gototop
         PUS.headertoggler(), // header toggler
         PUS.hoverheader(), // hover header
@@ -173,10 +178,7 @@ NOTE: This file contains all scripts for the actual Template.
         PUS.filters(), // filters
         PUS.customizetable(), // Customize Table
         PUS.add() // add
-
-        $('.select2').select2(); //initialize of select2
-
-        
+                
         // Collapsible Card
         // $('a[data-action="collapse"]').on('click', function (e) {
         //     e.preventDefault();
@@ -189,9 +191,9 @@ NOTE: This file contains all scripts for the actual Template.
           $(this).closest('.pus-card').removeClass().slideUp('fast');
         }); 
 
-        // $('.select-select2').select2({
+        $('.select2').select2(); //initialize of select2
 
-        // });
+        // $('.select-select2').select2({});
 
         // $.fn.datepicker.defaults.format = "mm/dd/yyyy";
         // $('.datepicker').datepicker({
@@ -205,29 +207,29 @@ NOTE: This file contains all scripts for the actual Template.
         // });
 
         // password show
-        $('.view-password').find('.input-password').each(function(index, input) {
-            var $input = $(input);
-            $input.parent().find('.icon-view').click(function() {
-                var change = "";
-                if ($(this).find('i').hasClass('fa-eye')) {
-                    $(this).find('i').removeClass('fa-eye')
-                    $(this).find('i').addClass('fa-eye-slash')
-                    change = "text";
-                } else {
-                    $(this).find('i').removeClass('fa-eye-slash')
-                    $(this).find('i').addClass('fa-eye')
-                    change = "password";
-                }
-                var rep = $("<input type='" + change + "' />")
-                    .attr('id', $input.attr('id'))
-                    .attr('name', $input.attr('name'))
-                    .attr('class', $input.attr('class'))
-                    .val($input.val())
-                    .insertBefore($input);
-                $input.remove();
-                $input = rep;
-            }).insertAfter($input);
-        });
+        // $('.view-password').find('.input-password').each(function(index, input) {
+        //     var $input = $(input);
+        //     $input.parent().find('.icon-view').click(function() {
+        //         var change = "";
+        //         if ($(this).find('i').hasClass('fa-eye')) {
+        //             $(this).find('i').removeClass('fa-eye')
+        //             $(this).find('i').addClass('fa-eye-slash')
+        //             change = "text";
+        //         } else {
+        //             $(this).find('i').removeClass('fa-eye-slash')
+        //             $(this).find('i').addClass('fa-eye')
+        //             change = "password";
+        //         }
+        //         var rep = $("<input type='" + change + "' />")
+        //             .attr('id', $input.attr('id'))
+        //             .attr('name', $input.attr('name'))
+        //             .attr('class', $input.attr('class'))
+        //             .val($input.val())
+        //             .insertBefore($input);
+        //         $input.remove();
+        //         $input = rep;
+        //     }).insertAfter($input);
+        // });
 
         // Mobile number
         // var telInput = $(".phone-code")
@@ -255,6 +257,7 @@ NOTE: This file contains all scripts for the actual Template.
         // },
         //    utilsScript: "js/mobilecode/utils.js"
         // });
+
         var reset = function() {
           telInput.removeClass("error");
           // errorMsg.addClass("hide");
@@ -289,10 +292,5 @@ NOTE: This file contains all scripts for the actual Template.
         //     $('#' + dashboard_menu_type).show();
         //     $(this).addClass('application-tabs-active');
         // });
-
 	}); 
 })(jQuery);
-
-// $(document).ready(function() {
-    
-// });

@@ -271,7 +271,7 @@ label.form-lbl {margin: 0; font-size: 14px; opacity: 0.8; width: 100%;}
 .toggler-menu .active span:nth-child(2) {left: 50%; width: 0; }
 .toggler-menu .active span:nth-child(3) {top: 18px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 /* :: header*/
-header.mobile-active:after {content: ""; position: fixed; background: rgb(0 0 0 / 77%); top: 0; width: 100%; height: 100%; z-index: -9; }
+/* header.mobile-active:after {content: ""; position: fixed; background: rgb(0 0 0 / 77%); top: 0; width: 100%; height: 100%; z-index: -9; } */
 .mobile-active{display: block !important;}
 .main-sidebar {height: 100vh; overflow: auto; z-index: 9; background-color: #0561d9;}
 .header-left{width: 60px; position: fixed; left: 0; top: 0; height: 100vh; z-index: 999;-webkit-transition: all linear 0.3s; -ms-transition: all linear 0.3s; -moz-transition: all linear 0.3s; -o-transition: all linear 0.3s; transition: all linear 0.3s; }
